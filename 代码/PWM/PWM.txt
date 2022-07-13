@@ -1,0 +1,10 @@
+PWM_Step = 0;
+    PWM_Count = 800;
+    TIMER_CFG = 0;
+    TIMER_CNT = 0;
+    TIMER_CMP = PWM_Count / 2;
+    TIMER_STP = PWM_Count / 2;
+    TIMER_CFG = 0x107;
+    
+    INT_EN  = INTC_TIMER;                   //定时中断使能开启
+    flag2=0;

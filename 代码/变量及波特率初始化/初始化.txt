@@ -1,0 +1,13 @@
+//变量初始化
+    int flag1=0;                            //呼吸灯步骤变量
+    int flag = 0;                           //拨码步骤变量
+    int flag5 = 0;
+    int flag6 = 0;
+    int flag7 = 0;
+    int flag8 = 0;
+    int a=0;
+    char num;
+    
+
+    volatile unsigned int time1;            //呼吸灯计时变量
+    console_init(115200);                   //串口波特率初始化

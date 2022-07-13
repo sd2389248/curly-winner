@@ -1,0 +1,62 @@
+/********************拨码开始计时**********************/
+    if(flag==0)
+    {
+    
+            if(gpio_read(25) == GPIO_HIGH)
+           {
+                flag=1;
+                if(flag8==0)
+                  {
+                       printk("C");
+                       flag8=1;
+                      
+                  }
+            
+                
+           }
+          if(gpio_read(26) == GPIO_HIGH)
+           {
+                flag=2;
+                if(flag8==0)
+                  {
+                       printk("D");
+                       flag8=1;
+                       
+                  }
+            
+           }
+           if(gpio_read(27) == GPIO_HIGH)
+           {
+                flag=3;
+                if(flag8==0)
+                  {
+                       printk("E");
+                       flag8=1;
+                      
+                  }
+               
+           }
+           if(gpio_read(28) == GPIO_HIGH)
+           {
+                flag=4;
+                if(flag8==0)
+                  {
+                       printk("F");
+                       flag8=1;
+                       
+                  }
+               
+           }
+           
+           
+         
+     }
+
+
+
+/********************呼吸灯开始计时**********************/
+        if(flag1==0)
+        {
+             time1=get_clock_ticks();
+             flag1=1;
+        }

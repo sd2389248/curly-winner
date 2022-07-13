@@ -1,0 +1,92 @@
+/********************延时3s**********************/
+     if(a==0)
+     {
+     
+        if(flag==1)
+        {
+            gpio_write(35, GPIO_LOW);
+             flag2=0;
+               
+             if(get_clock_ticks()>=3000)
+             {
+                gpio_write(35, GPIO_HIGH);
+                flag2=1;
+                //flag=0;
+                  if(flag5==0)
+                  {
+                       printk("1");
+                       flag5=1;
+                  }
+              }
+
+         }
+
+/********************延时13s**********************/
+        if(flag==2)
+        {
+            gpio_write(35, GPIO_LOW);
+             flag2=0;
+             if(get_clock_ticks()>=13
+             000)
+             {
+                gpio_write(35, GPIO_HIGH);
+                flag2=1;
+                //flag=0;
+                if(flag5==0)
+                  {
+                       printk("1");
+                       flag5=1;
+                  }
+
+                 //打印
+                 //printk("%u\r", flag);
+                 
+              }
+         }
+
+/********************延时30s**********************/
+          if(flag==3)
+        {
+            gpio_write(35, GPIO_LOW);
+             flag2=0;
+
+             if(get_clock_ticks()>=30000)
+             {
+                gpio_write(35, GPIO_HIGH);
+                flag2=1;
+                //flag=0;
+                if(flag5==0)
+                  {
+                       printk("1");
+                       flag5=1;
+                  }
+              
+                //打印
+                //printk("%u\r", flag);
+              }
+         }
+
+/********************延时180s**********************/
+          if(flag==4)
+        {
+            gpio_write(35, GPIO_LOW);
+             flag2=0;
+             if(get_clock_ticks()>=180000)
+             {
+                gpio_write(35, GPIO_HIGH);
+                flag2=1;
+                //flag=0;
+                if(flag5==0)
+                  {
+                       printk("1");
+                       flag5=1;
+                  }
+                
+                 //打印
+                  //printk("%u\r", flag);
+              }
+        }
+
+       }
+   
+    }

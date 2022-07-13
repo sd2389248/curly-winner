@@ -1,0 +1,11 @@
+    printf("\r\nmain() function.\r\n\r\n");
+    
+    gpio_enable(24, DIR_OUT, GPIO_LOW);     //呼吸灯引脚初始化
+    gpio_enable(35, DIR_OUT, GPIO_LOW);     //延时灯引脚初始化
+
+    gpio_enable(25, DIR_IN, GPIO_LOW);      //拨码4个引脚初始化
+    gpio_enable(26, DIR_IN, GPIO_LOW);
+    gpio_enable(27, DIR_IN, GPIO_LOW);
+    gpio_enable(28, DIR_IN, GPIO_LOW);
+
+    gpio_enable(34, DIR_OUT, GPIO_HIGH);    //光耦PWM引脚初始化
